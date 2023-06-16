@@ -12,6 +12,12 @@
         android:theme="@style/Theme.QurbanApp"
         tools:targetApi="31">
         <activity
+            android:name=".daftarpenerima.FormTambahPenerimaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".daftarpenerima.DaftarPenerimaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
