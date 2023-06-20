@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
 
     tools:context=".daftarpenerima.FormTambahPenerimaActivity">
@@ -13,77 +13,79 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/green_700"
         app:liftOnScroll="true">
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar_data_penerima"
-        android:layout_width="match_parent"
-        app:title="Daftar Penerima"
-        android:layout_height="?attr/actionBarSize" />
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_data_penerima"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Daftar Penerima" />
     </com.google.android.material.appbar.AppBarLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            >
+            android:layout_marginBottom="8dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:id="@+id/edt_nip"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
                 android:hint="Nama"
-                android:maxLines="1"/>
+                android:inputType="number"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            >
+            android:layout_marginBottom="8dp">
+
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:id="@+id/edt_nama"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
                 android:hint="Nomor Kupon"
-                android:maxLines="1"/>
+                android:inputType="text"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            >
+            android:layout_marginBottom="8dp">
+
             <com.google.android.material.textfield.TextInputEditText
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:id="@+id/edt_alamat"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Jumlah Dapat"
-                android:maxLines="1"/>
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
-<CheckBox
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:hint="Status Terima"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Status Terima" />
+
         <Button
-            android:id="@+id/btn_submit_jamaah"
+            android:id="@+id/btn_submit_penerima"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Simpan"
-            />
+            android:hint="Simpan" />
     </LinearLayout>
 
 </LinearLayout>
