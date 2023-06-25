@@ -1,7 +1,23 @@
 <resources>
     <string name="app_name">QurbanApp</string>
-        <string name="tv_umur">umur</string>
 
-    </resources>
+    <string name="label_et_nama_panitia">Nama Panitia</string>
+    <string name="label_et_jabatan_pj">Jabatan/ PJ</string>
+    <string name="label_et_keterangan">Keterangan</string>
+    <string name="label_et_nomerhp">Nomer HP</string>
+    <string name="tv_jabatan">Jabatan</string>
 
-
+    <string-array name="Jabatan">
+        <item>Ketua</item>
+        <item>Wakil Ketua</item>
+        <item>Bendahara</item>
+        <item>Sekretaris</item>
+        <item>PJ Pengadaan dan Penerimaan</item>
+        <item>PJ Pemotongan dan Distribusi</item>
+        <item>PJ Acara dan Humas</item>
+        <item>PJ Perlengkapan</item>
+        <item>PJ Transportasi</item>
+        <item>PJ Keamanan</item>
+        <item>PJ Konsumsi</item>
+    </string-array>
+</resources>

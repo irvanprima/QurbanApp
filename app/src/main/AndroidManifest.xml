@@ -18,6 +18,12 @@
             android:name=".daftarpenerima.DaftarPenerimaActivity"
             android:exported="false" />
         <activity
+            android:name=".DaftarPanitia.TambahPanitiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarPanitia.DaftarPanitiaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
