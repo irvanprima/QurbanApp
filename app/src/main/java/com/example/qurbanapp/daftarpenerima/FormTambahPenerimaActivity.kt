@@ -2,7 +2,6 @@ package com.example.qurbanapp.daftarpenerima
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.qurbanapp.R..
 import com.example.qurbanapp.databinding.ActivityFormTambahPenerimaBinding
 
 class FormTambahPenerimaActivity : AppCompatActivity() {

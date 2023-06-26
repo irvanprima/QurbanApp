@@ -11,45 +11,36 @@
     android:backgroundTint="#79E0EE"
     app:cardElevation="4dp"
     app:strokeWidth="2dp">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
         android:paddingVertical="12dp"
-        android:paddingHorizontal="8dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
         <TextView
-            android:id="@+id/tv_umur_penerima"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="umur"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="12 Tahun"/>
-        <TextView
-            android:id="@+id/tv_nama_penerima"
+            android:id="@+id/tv_nama_panitia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Nama Penerima"/>
+            tools:text="Nama Panitia" />
+
         <TextView
-            android:id="@+id/tv_alamat_penerima"
+            android:id="@+id/tv_posisi_pj"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:lines="1"
-            android:layout_height="wrap_content"
             android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_nama_penerima"
-            app:layout_constraintStart_toStartOf="@id/tv_nama_penerima"
-            tools:text="Alamat"/>
-        <TextView
-            android:id="@+id/tv_status_penerima"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_alamat_penerima"
-            app:layout_constraintStart_toStartOf="@id/tv_nama_penerima"
-            tools:text="Sudah Ambil"/>
+            app:layout_constraintStart_toStartOf="@id/tv_nama_panitia"
+            app:layout_constraintTop_toBottomOf="@id/tv_nama_panitia"
+            tools:text="Posisi/ PJ" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

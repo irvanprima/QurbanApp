@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,11 +11,12 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/green_700"
         app:liftOnScroll="true">
+
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar_main_user"
             android:layout_width="match_parent"
-            app:title="Qurban App"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="?attr/actionBarSize"
+            app:title="Qurban App" />
 
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -47,16 +47,29 @@
         app:layout_constraintTop_toBottomOf="@+id/qurban_image" />
 
     <Button
-        android:id="@+id/btn_daftar_sohibul"
+        android:id="@+id/btn_daftar_penerima"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:backgroundTint="#79E0EE"
-        android:text="Daftar Sohibul"
+        android:text="Daftar Penerima"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_tanggal" />
+
+    <Button
+        android:id="@+id/btn_daftar_panitia"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#79E0EE"
+        android:text="Daftar Panitia"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_daftar_penerima" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
